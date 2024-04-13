@@ -1,0 +1,122 @@
+
+command angular : npm install
+                  npm start
+
+
+http://localhost:8085/api/admin/register
+
+admin cha password create kartana // cross origin la comment karaychi Admin controller madhe
+{
+   
+    "firstName": "Admin",
+    "lastName": "Admin",
+    "adminEmailId": "Admin@gmail.com",  //username
+    "adminPassword": "Admin123"         // password
+}
+
+http://localhost:8085/api/products/add products
+
+Product
+{
+
+"productname":"Laptop",
+"image":"laptop",
+"description":"bcjhgyufsgfcsy",
+"mrpPrice":55000,
+"quantity":5,
+"measurment":"jndc",
+"category":"1"
+
+}
+
+
+
+http://localhost:8085/api/customers/register
+
+customer
+{
+"firstName":"MFhjju",
+"lastName":"ffff",
+"dateOfBirth":"1999-10-25",
+"phoneNumber":7821085490,
+"district":"Pune",
+"state":"Maharashtra",
+"zipCode":411018,
+"emailID":"fgft@gmail.com",
+"gender":"female",
+"password":"Megha1234",
+"address":"pune pimpri"
+}
+
+
+
+
+http://localhost:8085/api/customers/login
+
+cust login
+
+{
+
+
+
+"emailID":"fgft@gmail.com",
+
+"password":"Megha1234"
+
+
+
+}
+
+
+http://localhost:8085/api/cart/1000/5000
+cart :-{customerId}/{productId}
+{
+
+
+"quantity":2,
+"mrpPrice":55000
+
+
+
+}
+
+http://localhost:8085/api/orders/1000/1500
+order :-{customerId}/{cartId}
+{
+
+
+"mrpPrice":55000,
+"quantity":2,
+"totalPrice":55000,
+"orderStatus":"Not Confirm",
+"paymentStatus":"Unpaid",
+"orderedDate":"2023-06-20",
+"productname":"Laptop",
+"image":"laptop"
+
+
+
+
+}
+
+http://localhost:8085/api/payements/1000/1000
+payment :-{customerId}/{orderId}
+{
+
+
+
+"totalPrice":55000,
+"orderId": 1000,
+"nameOnCard": "Megha",
+"cardNumber":1234567895214567,
+"expYear": "2026",
+"cvv":123,
+"PaidDate":"2023-06-20",
+"paidAmount":110000.0
+
+
+
+
+
+
+}
